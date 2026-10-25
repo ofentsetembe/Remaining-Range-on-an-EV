@@ -1,0 +1,36 @@
+Random Forest residual-correction results
+=========================================
+
+Training rows: 79,360
+Testing rows: 19,936
+Training trips: 54
+Testing trips: 13
+Features: velocity_mps, acceleration_mps2, elevation_m, gradient_percent, estimated_wheel_power_w
+Target: battery_power_residual_w
+
+Model settings
+  Trees: 60
+  Maximum depth: 18
+  Minimum samples per leaf: 10
+  Sample fraction per tree: 0.25
+  Random seed: 42
+
+Instantaneous test-power metrics
+  Physics MAE: 3.0475 kW
+  Hybrid MAE: 1.5029 kW
+  Physics RMSE: 4.2894 kW
+  Hybrid RMSE: 2.1169 kW
+  Physics R2: 0.91358
+  Hybrid R2: 0.97895
+  Physics mean error: -1.9428 kW
+  Hybrid mean error: 0.0983 kW
+
+Complete-test-trip metrics
+  Physics mean absolute percentage error: 27.260%
+  Hybrid mean absolute percentage error: 13.033%
+  Physics median absolute percentage error: 28.332%
+  Hybrid median absolute percentage error: 11.084%
+
+Residual convention
+  target = measured battery power - physics battery power
+  hybrid = physics battery power + predicted target
