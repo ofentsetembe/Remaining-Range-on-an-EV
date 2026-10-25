@@ -270,7 +270,11 @@ The main files to inspect are `rfr_metrics.txt` and `rfr_trip_metrics.csv`. The 
 
 ## Data files
 
-The source-only ZIP is enough for reviewing and running the offline simulator. The ML pipeline additionally needs trip data. Because the CSVs are large, agree on one of these options before sending them:
+The source-code ZIP does not include the datasets because of their large file sizes. Download the required datasets from the Google Drive folder below before running the machine-learning pipeline.
+
+Google Drive — Dataset Download: [https://drive.google.com/drive/folders/11fvGVq2hUVXennN19YmN2PKLMGRITqrb?usp=share_link]
+
+The folder contains the datasets required to run the machine-learning pipeline, including the raw driving data, cleaned data, physics-enriched data, and trained model results. Download the files required for your chosen workflow, as described in the Machine-learning workflow section.
 
 ### Option A Reproduce the complete ML pipeline
 
